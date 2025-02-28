@@ -6,6 +6,7 @@ export * from "./address";
 export * from "./affiliation";
 export * from "./birth";
 export * from "./communication";
+export * from "./credential";
 export * from "./dates";
 export * from "./identity";
 export * from "./measurements";

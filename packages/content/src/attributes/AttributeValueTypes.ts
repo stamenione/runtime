@@ -35,6 +35,8 @@ import {
     ConsentJSON,
     Country,
     CountryJSON,
+    Credential,
+    CredentialJSON,
     DeliveryBoxAddress,
     DeliveryBoxAddressJSON,
     DisplayName,
@@ -69,6 +71,7 @@ import {
     ICommunicationLanguage,
     IConsent,
     ICountry,
+    ICredential,
     IDeliveryBoxAddress,
     IdentityFileReference,
     IdentityFileReferenceJSON,
@@ -238,6 +241,7 @@ export module AttributeValues {
                 | Website;
 
             export const CLASSES = [
+                Credential,
                 Affiliation,
                 BirthDate,
                 BirthName,
@@ -262,6 +266,7 @@ export module AttributeValues {
             ];
 
             export const TYPE_NAMES = [
+                "Credential",
                 "Affiliation",
                 "BirthDate",
                 "BirthName",
@@ -291,6 +296,7 @@ export module AttributeValues {
 
         export module Uneditable {
             export type Json =
+                | CredentialJSON
                 | AffiliationOrganizationJSON
                 | AffiliationRoleJSON
                 | AffiliationUnitJSON
@@ -315,6 +321,7 @@ export module AttributeValues {
                 | ZipCodeJSON;
 
             export type Interface =
+                | ICredential
                 | IAffiliationOrganization
                 | IAffiliationRole
                 | IAffiliationUnit
@@ -339,6 +346,7 @@ export module AttributeValues {
                 | IZipCode;
 
             export type Class =
+                | Credential
                 | AffiliationOrganization
                 | AffiliationRole
                 | AffiliationUnit
@@ -363,6 +371,7 @@ export module AttributeValues {
                 | ZipCode;
 
             export const CLASSES = [
+                Credential,
                 AffiliationOrganization,
                 AffiliationRole,
                 AffiliationUnit,
@@ -388,6 +397,7 @@ export module AttributeValues {
             ];
 
             export const TYPE_NAMES = [
+                "Credential",
                 "AffiliationOrganization",
                 "AffiliationRole",
                 "AffiliationUnit",
